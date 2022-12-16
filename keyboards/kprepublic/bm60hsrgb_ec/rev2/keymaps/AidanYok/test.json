@@ -1,0 +1,27 @@
+{
+    "keyboard": "handwired/my_macropad",
+    "keymap": "my_keymap",
+    "macros": [
+        [
+            {"action":"down", "keycodes": ["LSFT"]},
+            "hello world1",
+            {"action": "up","keycodes": ["LSFT"]}
+        ],
+        [
+            {"action":"tap", "keycodes": ["LCTL", "LALT", "DEL"]}
+        ],
+        [
+            "ding!",
+            {"action":"beep"}
+        ],
+        [
+            {"action":"tap", "keycodes": ["F1"]},
+            {"action":"delay", "duration": "1000"},
+            {"action":"tap", "keycodes": ["PGDN"]}
+        ]
+    ],
+    "layout": "LAYOUT_all",
+    "layers": [
+        ["MACRO_0", "MACRO_1"]
+    ]
+}

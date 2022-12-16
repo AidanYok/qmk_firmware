@@ -21,7 +21,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         } else {
             // when keycode right_click is released
         }
-        break;
+        return false;
       case right_click:
         if (record->event.pressed) {
             // when keycode right_click is pressed
@@ -29,11 +29,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         } else {
             // when keycode right_click is released
         }
-        break;
+        return false;
       default:
       return true;
   }
-  return true;
 }
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
